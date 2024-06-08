@@ -11,11 +11,6 @@ import "fmt"
 //[9, 9, 9] 		-> [9]
 //[1, 2, 5, 2, 1]   -> [1, 2, 5]
 
-type LinkedList interface {
-	Add(data int) *Node
-	RemoveDuplicates() *Node
-}
-
 type Node struct {
 	next *Node
 	data int
